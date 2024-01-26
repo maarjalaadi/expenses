@@ -1,7 +1,7 @@
 import './App.css';
-import ExpenseItem from './components/ExpenseItem'
+import Expenses from './components/Expenses/Expenses';
 
-function App() {
+const App = () => {
   const expenses = [ 
   { 
     date: new Date(2023, 9, 6),
@@ -14,16 +14,12 @@ function App() {
   price: 99.99
  } 
 ]
+
 return (
-  <div className="App" class="expenses">
-  <ExpenseItem 
-expenseData={expenses[0]}
-  />
-    <ExpenseItem 
-expenseData={expenses[1]}
-  />
+  <div className="App">
+     <Expenses expenses={expenses}/>
   </div>
-)
+  );
 }
 
 export default App;

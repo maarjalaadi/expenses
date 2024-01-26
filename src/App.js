@@ -15,7 +15,7 @@ function App() {
  } 
 ]
 return (
-  <div className="App">
+  <div className="App" class="expenses">
   <ExpenseItem 
 expenseData={expenses[0]}
   />
@@ -23,6 +23,7 @@ expenseData={expenses[0]}
 expenseData={expenses[1]}
   />
   </div>
-);}
+)
+}
 
 export default App;

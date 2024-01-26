@@ -1,5 +1,7 @@
 import './ExpenseItem.css'
 import ExpenseDate from './ExpenseDate'
+import Expenses from './Expenses'
+
 function ExpenseItem(props){
 
     const day = props.expenseData.date.toLocaleString('en-US',{day: '2-digit'})
